@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="body">
+  <div class="page">
+    <main class="content">
+      <section class="gallery">
+      </section>
+    </main>
+  </div>
+
+  <div class="lightbox">
+    <div class="lightbox__container">
+      <button class="lightbox__close-btn" type="button"></button>
+      <div class="lightbox__image-wrapper">
+        <img class="lightbox__image" src="" alt="">
+      </div>
+      <button class="lightbox__like-btn"></button>
+
+      <div class="lightbox__comments-wrapper">
+        <h3 class="lightbox__comments-title">Комментарии</h3>
+        <div class="no-comments">
+          <p class="no-comments__text">Комментарий нет</p>
+        </div>
+        <div class="lightbox__comments-box">
+        </div>
+        <form class="form form__comment">
+          <textarea required class="form__textarea" name="commentText" cols="30" rows="10" placeholder="Начните писать..." ></textarea>
+          <button class="lightbox__add-button" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <template class="card-template">
+    <div class="card">
+      <img class="card__image" src="" alt="Описание изображения">
+    </div>
+  </template>
+
+  <template class="comment-template">
+    <div class="comment">
+      <img class="comment__avatar" src="./images/avatar.png" alt="Аватарка">
+      <div>
+        <h3 class="comment__user-name">user01</h3>
+        <p class="comment__text"></p>
+      </div>
+    </div>
+  </template>
+
+
+  <script src="./constants/constants.js"></script>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>
